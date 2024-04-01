@@ -1,3 +1,4 @@
+
 const express = require('express');
 const cors = require('cors');
 
@@ -24,7 +25,6 @@ class Server {
         //sockets
         this.sockets();
     }
-
     // async conectarDB() {
     //     await dbConnection();
     // }
@@ -42,15 +42,12 @@ class Server {
 
     routes() {
         
-        // this.app.use( this.paths.auth, require('../routes/auth'));
-        
+        // this.app.use( this.paths.auth, require('../routes/auth'));        
     }
 
     sockets(){
         this.io.on('connection', socketController )
     }
-
-
 
     listen() {
         // this.app.listen( this.port, () => {            

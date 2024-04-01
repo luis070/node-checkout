@@ -21,8 +21,6 @@ const socketController = (socket) => {
         //solamente contesta al que llamo y no a todos esto te daras cuenta si lo pracitcas otra vez
         //
         callback(id);
-
-
     })
 }
 
